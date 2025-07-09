@@ -1,16 +1,64 @@
-# 🖼️ Advanced Image Editor - Python Implementation
+# 🖼️ Advanced Image Processing Editor
 
-A comprehensive image processing application that provides various image manipulation operations including filtering, transformations, and artistic effects. Built using PIL/Pillow with both interactive console interface and command-line batch processing capabilities.
+A professional-grade image processing application implementing sophisticated computer vision algorithms including bilinear interpolation, kernel convolution, color space transformations, and artistic effects. Built with PIL/Pillow featuring both interactive console interface and command-line batch processing capabilities.
 
-## 🎨 Features Overview
+## 🎨 Computer Vision Features
 
-This image editor implements sophisticated image processing algorithms including:
+This image editor showcases advanced image processing algorithms used in computer vision and digital photography:
 
-- **Color Space Conversion** (RGB ↔ Grayscale)
-- **Image Filtering** (Blur, Edge Detection, Custom Kernels)
-- **Geometric Transformations** (Resize, Rotate, Scale)
-- **Artistic Effects** (Quantization, Cartoonification)
-- **Advanced Algorithms** (Bilinear Interpolation, Adaptive Thresholding)
+### Core Image Operations
+- **Color Space Conversions** (RGB ↔ Grayscale with proper luminance weighting)
+- **Kernel Convolution** (Custom filters, blur effects, edge detection)
+- **Geometric Transformations** (Bilinear interpolation-based resizing)
+- **Artistic Effects** (Color quantization, edge-preserving cartoonification)
+- **Channel Processing** (RGB separation, individual channel manipulation)
+
+### Advanced Algorithms
+- **Bilinear Interpolation**: High-quality pixel interpolation for smooth scaling
+- **Convolution Matrices**: Customizable kernel-based image filtering
+- **Adaptive Processing**: Context-aware image enhancement techniques
+- **Mathematical Morphology**: Structural image processing operations
+
+## 💻 Installation & Usage
+
+### Prerequisites
+- Python 3.9+
+- PIL/Pillow for image processing
+- NumPy for numerical operations (optional but recommended)
+
+### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/EldadStyleZ/image-processing-editor.git
+cd image-processing-editor
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Interactive mode
+python image_editor.py
+
+# Command-line processing
+python image_editor.py input.jpg --operation blur --output blurred.jpg
+
+# Batch processing multiple images
+python image_editor.py *.jpg --operation edge_detect --output_dir processed/
+```
+
+### Example Operations
+```bash
+# Convert to grayscale with high-quality algorithm
+python image_editor.py photo.jpg --grayscale --output gray_photo.jpg
+
+# Apply edge detection with custom thresholds
+python image_editor.py image.png --edge_detect --threshold 0.3 --output edges.png
+
+# Resize with bilinear interpolation
+python image_editor.py large_image.jpg --resize 800 600 --output resized.jpg
+
+# Artistic cartoonification effect
+python image_editor.py portrait.jpg --cartoonify --blur_value 7 --output cartoon.jpg
+```
 
 ## 🚀 Core Capabilities
 
